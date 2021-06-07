@@ -26,6 +26,9 @@
 #header .nav li {
   height: 46px;
 }
+.nav {
+  display: inline-block;
+}
 
 .nav li {
   line-height: 46px;
