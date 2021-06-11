@@ -83,6 +83,14 @@ input {
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #dddfe2;
+  
+}
+input:focus {
+  border: #1877f2;
+  width: 364px;
+  height: 52px;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 input:a {
