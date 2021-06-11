@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex-grow: 1;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 13px;
+}
+input[type="radio"],
+label {
+    vertical-align: middle;
+}
+
+input:not([type="radio"]),
+textarea,
+select {
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    padding: 6px;
+    background-color: rgb(195, 231, 255);
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    resize: none;
+}
+
+input:not([type="radio"]):focus,
+textarea:focus,
+select:focus {
+    box-shadow: 0 0 0 2px rgba(195, 231, 255, 0.5);
+}
+
+button {
+    background-color: #1752f0;
+    border: 0;
+    color: #ffffff;
+    padding: 6px;
+    border-radius: 0;
+}
+
+button:active,
+button:focus {
+    box-shadow: 0 0 0 2px rgba(23, 82, 240, 0.5);
+    outline: none;
+}
+
+.margin-right {
+    margin-right: 15px;
+}
+
+option {
+    background-color: #ffffff;
+    padding: 6px;
+}

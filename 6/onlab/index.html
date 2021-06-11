@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Multi-Media</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            table {
+                /* caption-side: bottom; */
+                /* border-spacing: 10px; */
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            th,
+            td {
+                border: 1px solid rgb(180, 173, 173);
+                padding: 10px;
+                width: 150px;
+            }
+
+            /* Pseudo Element */
+            tbody tr:nth-child(2n + 1) {
+                background-color: bisque;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>
+                Danh sách học viên
+            </caption>
+
+            <thead>
+                <!-- table row -->
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên</th>
+                    <th>Email</th>
+                    <th>Điện thoại</th>
+                    <th>Trạng thái</th>
+                    <th>Nhập học</th>
+                    <th>Kết thúc</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="highlight">
+                    <!-- table data -->
+                    <td>1</td>
+                    <td>Ngoc Tung Dao</td>
+                    <td>tung@gmail.com</td>
+                    <td>08xxxxx</td>
+                    <td>Dang hoc</td>
+                    <td>24-04-2021</td>
+                    <td rowspan="2"></td>
+                </tr>
+                <tr>
+                    <!-- table data -->
+                    <td>1</td>
+                    <td>Ngoc Tung Dao</td>
+                    <td>tung@gmail.com</td>
+                    <td>08xxxxx</td>
+                    <td>Dang hoc</td>
+                    <td>24-04-2021</td>
+                    <!-- <td></td> -->
+                </tr>
+
+                <tr class="highlight">
+                    <!-- table data -->
+                    <td>1</td>
+                    <td>Ngoc Tung Dao</td>
+                    <td>tung@gmail.com</td>
+                    <td>08xxxxx</td>
+                    <td>Dang hoc</td>
+                    <td>24-04-2021</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <!-- table data -->
+                    <td>1</td>
+                    <td>Ngoc Tung Dao</td>
+                    <td>tung@gmail.com</td>
+                    <td>08xxxxx</td>
+                    <td>Dang hoc</td>
+                    <td>24-04-2021</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <!-- table data -->
+                    <td>1</td>
+                    <td>Ngoc Tung Dao</td>
+                    <td>tung@gmail.com</td>
+                    <td>08xxxxx</td>
+                    <td>Dang hoc</td>
+                    <td>24-04-2021</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <!-- table data -->
+                    <td>1</td>
+                    <td>Ngoc Tung Dao</td>
+                    <td>tung@gmail.com</td>
+                    <td>08xxxxx</td>
+                    <td>Dang hoc</td>
+                    <td>24-04-2021</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <!-- table data -->
+                    <td>1</td>
+                    <td>Ngoc Tung Dao</td>
+                    <td>tung@gmail.com</td>
+                    <td>08xxxxx</td>
+                    <td>Dang hoc</td>
+                    <td>24-04-2021</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <!-- table data -->
+                    <td>1</td>
+                    <td>Ngoc Tung Dao</td>
+                    <td>tung@gmail.com</td>
+                    <td>08xxxxx</td>
+                    <td>Dang hoc</td>
+                    <td>24-04-2021</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <!-- table data -->
+                    <td>1</td>
+                    <td>Ngoc Tung Dao</td>
+                    <td>tung@gmail.com</td>
+                    <td>08xxxxx</td>
+                    <td>Dang hoc</td>
+                    <td>24-04-2021</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <!-- table data -->
+                    <td>1</td>
+                    <td>Ngoc Tung Dao</td>
+                    <td>tung@gmail.com</td>
+                    <td>08xxxxx</td>
+                    <td>Dang hoc</td>
+                    <td colspan="2">24-04-2021</td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <!-- table data -->
+                    <td>1</td>
+                    <td>Ngoc Tung Dao</td>
+                    <td>tung@gmail.com</td>
+                    <td>08xxxxx</td>
+                    <td>Dang hoc</td>
+                    <td>24-04-2021</td>
+                    <td rowspan="3">26-05-2021</td>
+                </tr>
+                <tr>
+                    <!-- table data -->
+                    <td>1</td>
+                    <td>Ngoc Tung Dao</td>
+                    <td>tung@gmail.com</td>
+                    <td>08xxxxx</td>
+                    <td>Dang hoc</td>
+                    <td>24-04-2021</td>
+                    <!-- <td>26-05-2021</td> -->
+                </tr>
+                <tr>
+                    <!-- table data -->
+                    <td>1</td>
+                    <td>Ngoc Tung Dao</td>
+                    <td>tung@gmail.com</td>
+                    <td>08xxxxx</td>
+                    <td>Dang hoc</td>
+                    <td>24-04-2021</td>
+                    <!-- <td>26-05-2021</td> -->
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th colspan="6">Tổng</th>
+                    <td>13</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="container">
+            <form action="">
+                <div class="form-row">
+                    <div class="form-group margin-right">
+                        <label for="fullname">Full name</label>
+                        <input
+                            id="fullname"
+                            name="fullname"
+                            type="text"
+                            placeholder="Full name"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="hello@domain.com"
+                        />
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="">Giới tính</label>
+
+                        <div class="input-group">
+                            <input
+                                id="male"
+                                name="gender"
+                                type="radio"
+                                value="male"
+                                checked
+                            />
+                            <label for="male">Male</label>
+
+                            <input
+                                id="fermale"
+                                name="gender"
+                                type="radio"
+                                value="fermale"
+                            />
+                            <label for="fermale">Fermale</label>
+
+                            <input
+                                id="3d"
+                                name="gender"
+                                type="radio"
+                                value="3d"
+                            />
+                            <label for="3d">3D</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">Tỉnh/thành phố</label>
+
+                        <select name="city" id="city">
+                            <option value="hn">Hanoi</option>
+                            <option value="hcm" selected>Ho Chi Minh</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <textarea
+                            name="message"
+                            rows="5"
+                            placeholder="Tell us what we can help you with!"
+                        ></textarea>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <button type="submit">Send message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
