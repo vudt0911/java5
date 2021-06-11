@@ -86,12 +86,7 @@ input {
   
 }
 input:focus {
-  border: #1877f2;
-  width: 364px;
-  height: 52px;
-  padding: 10px;
-  border-radius: 8px;
-}
+  border: #1877f2;}
 
 input:a {
   width: 364px;
