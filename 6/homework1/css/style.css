@@ -74,7 +74,7 @@ h2 {
   width: 364px;
   height: 52px;
   margin: 15px 0;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 
 input {
@@ -83,18 +83,18 @@ input {
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #dddfe2;
-  
 }
-input:focus {
-  border: #1877f2;}
 
-input:a {
+input:focus {
+  border: 2px solid #1877f2;
+}
+
+/* input a {
   width: 364px;
   height: 52px;
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid #1877f2;
-}
+} */
 
 .loginfb button {
   background-color: #1877f2;
@@ -114,7 +114,7 @@ input:a {
 .forgotpw:hover a {
   text-decoration: underline;
 }
-.newaccount button {
+.newaccount {
   background-color: #42b72a;
   border: none;
   font-size: 17px;
@@ -122,6 +122,7 @@ input:a {
   width: 160px;
   padding: 0 10px;
   border-radius: 8px;
+  text-align: center;
 }
 
 .newaccount a {
