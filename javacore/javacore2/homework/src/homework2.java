@@ -3,7 +3,7 @@ import java.util.Scanner;
 // import java.lang.Double;
 
 
-public class App {
+public class homework2 {
     public static void main(String[] args) throws Exception {
         System.out.println("Tính chỉ số BMI");
         System.out.println("--------------------------");

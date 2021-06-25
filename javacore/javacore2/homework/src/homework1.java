@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class homework1 {
     public static void main(String[] args) throws Exception {
         System.out.println("Bài toán tìm cạnh huyền khi nhập 2 cạnh góc vuông vào");
         System.out.println("--------------------------");
