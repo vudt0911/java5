@@ -18,8 +18,8 @@ public class homework2 {
 
         System.out.println("--------------------------");
 
-        System.out.println("Cạnh góc vuông 1 : "+a);
-        System.out.println("Cạnh góc vuông 2 : "+b);
+        System.out.println("Cân nặng là : "+a);
+        System.out.println("Chiều cao là : "+b);
         System.out.println("--------------------------");
         double c= a/(2*b);
         System.out.println("Chỉ số BMI là: " + c );
