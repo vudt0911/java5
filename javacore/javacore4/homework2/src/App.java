@@ -20,7 +20,10 @@ public class App {
         System.out.println("Thông tin động vật là: ");
         System.out.println("--------------------------");
         animal.show(nAnimal, cAnimal, lAnimal);
-        
+          
+        sc.nextLine();
+        System.out.println("nhap ten dong vat can tim: ");
+        // String name1 = sc.nextLine();
         animal.searchAnimal(nAnimal, cAnimal, lAnimal);
         System.out.println();
 
@@ -28,6 +31,7 @@ public class App {
        
 
         
-        
+    
+
     }
 }

@@ -31,11 +31,12 @@ public class Animal {
             System.out.println("--------------------------");
         }
     }
+        
 
+   
     public void searchAnimal(String[] name,String[] color, int[] legs){
-        System.out.println("nhap ten dong vat can tim: ");
-        String name1=sc.nextLine();
         for(int i=0; i<name.length; i++){
+            String name1 = sc.nextLine();
             if(name1.toLowerCase().equals(name[i])){
                 System.out.println("Con: "+name[i]+"\n"+"Màu: "+color[i]+"\n"+"Số chân: "+legs[i]);
             }
