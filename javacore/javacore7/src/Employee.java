@@ -81,15 +81,15 @@ public class Employee {
 
     public void input() {
         System.out.println("Nhập mã nhân viên: ");
-        employeeId = sc.nextInt();
+        employeeId = Integer.valueOf(sc.nextLine());
         System.out.println("Nhập tên: ");
         name = sc.nextLine();
-        sc.nextLine();
+
         System.out.println("Nhập tuổi: ");
-        age = sc.nextInt();
+        age = Integer.valueOf(sc.nextLine());
         System.out.println("Nhập số điện thoại: ");
         phoneNumber = sc.nextLine();
-        sc.nextLine();
+
         System.out.println("Nhập địa chỉ email: ");
         mailAddress = sc.nextLine();
         System.out.println("Nhập lương cơ bản: ");
@@ -98,17 +98,17 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Mã nhân viên: " + employeeId + " - Tên: " + name+ " - Tuổi: " + age + " - SDT: " + phoneNumber
-                + " - Email: " + mailAddress + " - Lương cơ bản: " + basicSalary;
+        return "Mã nhân viên: " + employeeId + " - Tên: " + name + " - Tuổi: " + age + " - SDT: " + phoneNumber
+                + " - Email: " + mailAddress + " - Lương cơ bản: " + formatMoney(basicSalary);
     }
 
     public void salary() {
     }
 
     // Định dạng số tiền theo mình mong muốn
-    public static String formatMoney(long salary) {
+    public static String formatMoney(int basicSalary) {
         DecimalFormat formatter = new DecimalFormat("###,###,##0.00");
         // 100000->100,000.00
-        return formatter.format(salary);
+        return formatter.format(basicSalary);
     }
 }

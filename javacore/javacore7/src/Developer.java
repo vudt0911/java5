@@ -34,7 +34,7 @@ public class Developer extends Employee {
 
     @Override
     public String toString() {
-        return super.toString() + " - Số giờ làm thêm: " + overtimeHours + " - Lương: " + salary;
+        return super.toString() + " - Số giờ làm thêm: " + overtimeHours + " - Lương: " + formatMoney(salary);
     }
 
 }

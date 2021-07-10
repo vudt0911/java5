@@ -31,8 +31,7 @@ public class Tester extends Employee {
 
     @Override
     public String toString() {
-        return super.toString() + " - Số lỗi phát hiện được: " + errorDetector + " - Lương: " + salary;
+        return super.toString() + " - Số lỗi phát hiện được: " + errorDetector + " - Lương: " + formatMoney(salary);
     }
 
-    
 }
