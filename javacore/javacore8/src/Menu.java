@@ -4,6 +4,7 @@ public class Menu {
         System.out.println("1-Hiển thị thông tin dựa theo danh mục");
         System.out.println("2-Tìm kiếm thông tin các sản phẩm dựa theo hãng");
         System.out.println("3-Tìm kiếm thông tin sản phẩm dựa trên mức giá và danh mục");
+        System.out.println("4-Tìm kiếm thông tin sản phẩm dựa trên nhập vào một chuỗi bất kỳ");
         System.out.println("0-Thoát");
     }
 

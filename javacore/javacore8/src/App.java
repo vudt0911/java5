@@ -28,10 +28,7 @@ public class App {
         listProducts.add(new Product("CO01", "Loa bluetooth Compact 2", "Loa bluetooth Compact 2, nghe sieu hay",
                 "XIAOMI", 290000, 15, 3, Category.ACCESSORIES));
 
-        // for (Product product : listProducts) {
-        // System.out.println(product);
-        // }
-
+        // Hiển thị menu chọn
         System.out.println("Nhập số từ 0 - 3 để thực hiện hành động");
         System.out.println("----------------------------------------------------------------");
         Menu.choose();
@@ -39,6 +36,7 @@ public class App {
         System.out.println("Hãy nhập số bạn cần thực hiện hành động");
         int number = Integer.valueOf(sc.nextLine());
         switch (number) {
+            // In thông tin dựa trên danh mục
             case 1:
                 System.out.println("----------------------------------------------------------------");
                 System.out.println("Bạn đang trong phần DANH MỤC: ");
@@ -62,11 +60,13 @@ public class App {
                         break;
                 }
                 break;
+            // In thông tin sản phẩm dựa trên tìm tên hãng
             case 2:
                 System.out.println("Nhập tên hãng bạn muốn tìm");
                 String brand = sc.nextLine();
                 getProductBrand(listProducts, brand);
                 break;
+            // In thông tin sản phẩm dựa trên mức giá và danh mục
             case 3:
                 System.out.println("----------------------------------------------------------------");
                 System.out.println("Bạn đang trong phần CHỌN MỨC GIÁ: ");
@@ -93,6 +93,13 @@ public class App {
                         break;
                 }
                 break;
+            case 4:
+                System.out.println("Nhập chuỗi cần tìm kiếm ");
+                String search = sc.nextLine();
+                getProductSearch(listProducts, search);
+                break;
+
+            // câu lệnh thoát khỏi chương trình
             case 0:
                 System.out.println("Chào tạm biệt");
                 System.exit(0);
@@ -206,4 +213,17 @@ public class App {
         }
         System.out.println((count == 0) ? "Không có sản phẩm này" : "");
     }
+
+    public static void getProductSearch(ArrayList<Product> list, String search) {
+        int count = 0;
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).toString().contains(search)) {
+                System.out.println(list.get(i).toString());
+                count++;
+            }
+        }
+        System.out.println("----------------------------------------------------------------");
+        System.out.println((count == 0) ? "Không tìm thấy sản phẩm có từ khóa bạn nhập" : "");
+    }
+
 }
