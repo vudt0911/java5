@@ -180,7 +180,7 @@ public class App {
                 break;
             case 2:
                 for (int i = 0; i < list.size(); i++) {
-                    if (list.get(i).getPrice() > 2000000 && list.get(i).getPrice() < 4000000) {
+                    if (list.get(i).getPrice() >= 2000000 && list.get(i).getPrice() < 4000000) {
                         System.out.println(list.get(i).toString());
                         count++;
                     }
@@ -188,7 +188,7 @@ public class App {
                 break;
             case 3:
                 for (int i = 0; i < list.size(); i++) {
-                    if (list.get(i).getPrice() > 4000000 && list.get(i).getPrice() < 7000000) {
+                    if (list.get(i).getPrice() >= 4000000 && list.get(i).getPrice() < 7000000) {
                         System.out.println(list.get(i).toString());
                         count++;
                     }
@@ -196,7 +196,7 @@ public class App {
                 break;
             case 4:
                 for (int i = 0; i < list.size(); i++) {
-                    if (list.get(i).getPrice() > 7000000 && list.get(i).getPrice() < 13000000) {
+                    if (list.get(i).getPrice() > =7000000 && list.get(i).getPrice() < 13000000) {
                         System.out.println(list.get(i).toString());
                         count++;
                     }
@@ -204,7 +204,7 @@ public class App {
                 break;
             case 5:
                 for (int i = 0; i < list.size(); i++) {
-                    if (list.get(i).getPrice() > 13000000) {
+                    if (list.get(i).getPrice() >= 13000000) {
                         System.out.println(list.get(i).toString());
                         count++;
                     }
