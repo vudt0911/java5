@@ -2,7 +2,7 @@
  * Category
  */
 public enum Category {
-    FOOD ("Thực phẩm"), HOUSEWARE ("Đồ gia dụng"), COSMETICS ("Mỹ phẩm"), FASHION ("Thời trang");
+    FOOD("Thực phẩm"), HOUSEWARE("Đồ gia dụng"), COSMETICS("Mỹ phẩm"), FASHION("Thời trang");
 
     private String value;
 
@@ -13,5 +13,5 @@ public enum Category {
     public String getValue() {
         return value;
     }
-    
+
 }

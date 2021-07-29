@@ -1,0 +1,9 @@
+{
+  "java.project.sourcePaths": ["src"],
+  "java.project.outputPath": "bin",
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "c:\\Users\\Windows10-DPC\\Desktop\\document Techmaster\\gson-2.8.7.jar",
+    "c:\\Users\\Windows10-DPC\\Desktop\\document Techmaster\\json-simple-1.1.1.jar"
+  ]
+}

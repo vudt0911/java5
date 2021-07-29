@@ -7,7 +7,7 @@ public class Product {
     private long amount;
     private long price;
     private long amountSale;
-    
+
     public Product(String id, String name, Category category, long amount, long price, long amountSale) {
         this.id = id;
         this.name = name;
@@ -68,21 +68,20 @@ public class Product {
         this.amountSale = amountSale;
     }
 
-    public static String formatMoney(long money){
+    public static String formatMoney(long money) {
         DecimalFormat formatter = new DecimalFormat("###,###,##0.00");
-        //100000->100,000.00
+        // 100000->100,000.00
         return formatter.format(money);
-        
-    }
-    
 
+    }
 
     @Override
     public String toString() {
-        return id + " - " + name + " - " + category.getValue() + " - " + amount + " - " + formatMoney(price) + " - " + amountSale;
+        return id + " - " + name + " - " + category.getValue() + " - " + amount + " - " + formatMoney(price) + " - "
+                + amountSale;
     }
 
     public void forEach(Object object) {
     }
-    
+
 }

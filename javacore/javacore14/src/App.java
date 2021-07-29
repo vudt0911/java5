@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Repository repository = new Repository();
-        // Controller controller = new Controller();
         Scanner scanner = new Scanner(System.in);
 
         boolean check = false;
@@ -70,7 +69,8 @@ public class App {
                     break;
             }
             System.out.println("------------------------------------------------------------------");
-            System.out.println("Ban co muon thoat chuong trinh khong ? nhan 'y' de thoat chuong trinh va nhan phim bat ky de tiep tuc");
+            System.out.println(
+                    "Ban co muon thoat chuong trinh khong ? nhan 'y' de thoat chuong trinh va nhan phim bat ky de tiep tuc");
             String chooseNext = scanner.nextLine();
             if (chooseNext.equalsIgnoreCase("y")) {
                 check = true;

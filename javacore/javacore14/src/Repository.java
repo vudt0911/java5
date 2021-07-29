@@ -7,7 +7,7 @@ public class Repository {
     List<Product> listProducts = new ArrayList<>();
 
     public Repository() {
-        listProducts.add(new Product("01", "Bánh Doraemon 3 vị", Category.FOOD, 100, 3500, 57));
+        listProducts.add(new Product("S01", "Bánh Doraemon 3 vị", Category.FOOD, 100, 3500, 57));
         listProducts.add(new Product("02", "Xúc xích sườn non", Category.FOOD, 150, 3500, 12));
         listProducts.add(new Product("03", "Thanh cua", Category.FOOD, 100, 5000, 85));
         listProducts.add(new Product("04", "Bánh khoai môn", Category.FOOD, 200, 42000, 78));
@@ -90,26 +90,27 @@ public class Repository {
                 .forEach(System.out::println);
     }
 
-    public void sortProductByAmountSale(){
-       
-       listProducts.sort(new Comparator<Product>(){
-        @Override
-        public int compare(Product o1, Product o2) {
-           int temp = o1.getAmountSale() > o2.getAmountSale() ? -1: 1;
-            return temp;
-        }
-       });
-       show();
+    public void sortProductByAmountSale() {
+
+        listProducts.sort(new Comparator<Product>() {
+            @Override
+            public int compare(Product o1, Product o2) {
+                int temp = o1.getAmountSale() > o2.getAmountSale() ? -1 : 1;
+                return temp;
+            }
+        });
+        show();
     }
-    public void filterProductByAmountSale(){
-   
-       Product maxProduct =  listProducts.stream().max(new Comparator<Product>(){
+
+    public void filterProductByAmountSale() {
+
+        Product maxProduct = listProducts.stream().max(new Comparator<Product>() {
 
             @Override
             public int compare(Product o1, Product o2) {
-                int temp = o1.getAmountSale() > o2.getAmountSale() ? 1: -1;
+                int temp = o1.getAmountSale() > o2.getAmountSale() ? 1 : -1;
                 return temp;
-            } 
+            }
         }).get();
         System.out.println(maxProduct);
     }
